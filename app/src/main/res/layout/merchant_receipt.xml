@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="15dp"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_gravity="center"
+    android:background="#E0E0E0"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+    <TextView
+        android:text="GREENWOOD Restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:gravity="center|center_horizontal"
+        android:transcriptMode="alwaysScroll"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"/>
+    <TextView
+        android:text="SHOP G 8 GREENWOOD PLAZA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        android:text="101 MILLER ST, North Sydney 8080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="TICKET 9005"
+            android:id="@+id/ticket"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:text="Date 10/19/2014"
+            android:layout_toRightOf="@id/ticket"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/server"
+            android:text="Server: Ronald"
+            android:layout_width="253dp"
+            android:layout_height="20dp" />
+        <TextView
+            android:text="Time 2:41 pm"
+            android:layout_toRightOf="@id/server"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:text="Mushrooms"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/text11"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@id/text1"
+            android:text="$9.00"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/text1"
+            android:text="Italian Fettucini"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/text22"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@id/text2"
+            android:layout_below="@id/text1"
+            android:textSize="20dp"
+            android:text="$9.00"
+            />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/text2"
+            android:textSize="20dp"
+            android:text="Brazilian Steak"/>
+        <TextView
+            android:id="@+id/text33"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@id/text3"
+            android:layout_below="@id/text2"
+            android:textSize="20dp"
+            android:text="$9.00"            />
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/text3"
+            android:textSize="20dp"
+            android:text="Wuxi Spareribs"/>
+        <TextView
+            android:id="@+id/text44"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_toRightOf="@id/text4"
+            android:layout_below="@id/text3"
+            android:textSize="20dp"
+            android:text="$9.00"/>
+        </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="20dp"
+            android:textSize="20dp"
+            android:text="SubTotal: "/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:textSize="20dp"
+            android:text="$36.00"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="20dp"
+            android:textSize="20dp"
+            android:text="Tax: "/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:textSize="20dp"
+            android:text="$4.00"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#303030"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="280dp"
+            android:layout_height="20dp"
+            android:textSize="20dp"
+            android:text="Total: "/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:textSize="20dp"
+            android:text="$40.00"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:marginBottom="10dp"
+        android:text="Send the Bill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#70E270"/>
+</LinearLayout>

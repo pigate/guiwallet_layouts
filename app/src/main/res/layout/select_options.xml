@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+<ScrollView android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/peersList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/titleWallet"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallet"
+            />
+
+        <ImageView
+            android:id="@+id/cardImage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mastercard_long"
+            android:layout_below="@id/titleWallet"
+            android:adjustViewBounds="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="35dp"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/titleCardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardImage"
+            android:text="Use card ending in:"
+            />
+
+        <TextView
+            android:id="@+id/cardNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardImage"
+            android:layout_toRightOf="@id/titleCardNumber"
+            android:layout_marginLeft="5dp"
+            android:text="4345"
+            android:textColor="#181818"
+            />
+        <TextView
+            android:id="@+id/changeCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardImage"
+            android:text="Change Card"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentRight="true"
+            android:textColor="#808080"
+            />
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/titleCardNumber"
+            />
+    <Spinner
+        android:id="@+id/options"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1"
+        ></Spinner>
+
+        <TextView
+            android:id="@+id/titleBillAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/options"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Calculated Bill:"/>
+
+        <TextView
+            android:id="@+id/BillAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/options"
+            android:layout_toRightOf="@id/titleBillAmount"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_marginLeft="10dp"
+            android:textColor="#181818"
+            android:text="$10.00"/>
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/titleBillAmount"
+        />
+
+    <TextView
+        android:id="@+id/titleFindPeers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider2"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Find Peers"
+        android:textColor="#181818"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"/>
+
+
+
+
+    <ImageView
+        android:id="@+id/findPeerBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/addbttn"
+        android:layout_below="@id/titleFindPeers"
+        />
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="20dp"
+      android:layout_marginBottom="10dp"
+        android:layout_below="@id/findPeerBttn"
+        />
+
+
+
+    <Button
+        android:id="@+id/confirmBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm to Pay"
+        android:background="#4DB870"
+        android:layout_below="@id/divider3"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_alignParentRight="true"
+        />
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

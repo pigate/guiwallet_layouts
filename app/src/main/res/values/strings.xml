@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GuiWallet</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_cust1">Cust1</string>
+    <string name="title_activity_cust2">Cust2</string>
+    <string name="title_activity_cust3">Cust3</string>
+    <string name="title_activity_cust4">Cust4</string>
+    <string name="title_activity_cust5">Cust5</string>
+    <string name="title_activity_merch1">Merch1</string>
+    <string name="title_activity_merch2">Merch2</string>
+    <string name="title_activity_merch3">Merch3</string>
+
+</resources>
